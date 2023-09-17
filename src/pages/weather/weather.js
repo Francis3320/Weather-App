@@ -4,6 +4,8 @@ import CurrentWeather from "../../components/current-weather/current-weather";
 import Forecast from "../../components/forecast/forecast";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "../../api";
 import "./weather.css";
+import { Link } from "react-router-dom";
+
 
 function Weather() {
   
@@ -32,12 +34,20 @@ function Weather() {
     }
     return(
         <div className="container">
+       
         <Search onSearchChange={handleOnSearchChange} />
         {currentWeather && <CurrentWeather data={currentWeather} />}
         {forecast && <Forecast data={forecast} />}
+        < Link to ="/">
+        <div className="button">
+        <  button className="home">Home</button>
+       </div>
+       </Link> 
       </div>
 
     )
+
+   
 }
 
 export default Weather;

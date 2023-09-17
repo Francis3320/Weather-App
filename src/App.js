@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App(){
 
   return (
-    <div>
+    <div className="container">
     <Router>
         <Routes>
               <Route path="/" index element={<Home />}>

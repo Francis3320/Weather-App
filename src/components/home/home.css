@@ -61,7 +61,7 @@ header {
   margin-top: 2rem;
   font-size: larger;
   font-weight: 300;
-  color:black;
+  color:rgb(255, 255, 255);
 }
 
 
@@ -69,7 +69,7 @@ header {
   text-align: center;
   padding: 1.5rem;
   border: 2px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 link{
@@ -77,34 +77,22 @@ link{
 }
 
 /* Media Query for Small Screens */
-@media (max-width: 680px) {
-  .container {
-      padding: 1rem;
-  }
-  
-  .steps {
-      grid-template-columns: 1fr;
-  }
-  
-  .button-container {
-      margin-top: 1rem;
-  }
-}
+
 
 /* Media Query for medium Screens */
-@media (min-width: 1024px) {
+ @media (min-width: 1024px) {
   .container {
-      padding: 1rem;
+      padding: 0;
   }
   
   .steps {
-      grid-template-columns: repeat(3, 1fr); 
+      grid-template-columns: repeat(0); 
   }
-  
-  .button-container {
-      margin-top: 2rem;
+ 
+ .button-container {
+      margin-top: 0rem;
   }
-}
+ }
 
 
 
